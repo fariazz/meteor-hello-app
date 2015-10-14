@@ -1,0 +1,15 @@
+<template name="applicationLayout">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <span class="navbar-brand">Mally Ideas</span>
+      </div>
+    </div>
+  </nav>
+  <div class="container" style="margin-top:80px;">
+    {{> loginButtons}}
+    {{#if currentUser}}
+      {{> yield}}
+    {{/if}}
+  </div>
+</template>
